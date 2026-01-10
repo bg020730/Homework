@@ -37,7 +37,18 @@
 </head>
 <body>
 
-  <h1>📘 과외 관리</h1>
+<script>
+  const password = "0110"; // ← 여기 비밀번호 바꾸기
+
+  let input = prompt("비밀번호를 입력하세요");
+
+  if (input !== password) {
+    alert("접근 불가");
+    document.body.innerHTML = "";
+  }
+</script>
+
+  <h1>📘 수업 관리</h1>
 
   <a class="button" href="https://forms.gle/La6VFV2PbazrKf9o8">
     📋 오늘 숙제 체크
@@ -48,7 +59,7 @@
   </a>
 
   <div class="note">
-    매일 숙제 체크는 꼭 해주세요!
+    숙제 체크는 매일 꼭 해주세요!
   </div>
 
 </body>
