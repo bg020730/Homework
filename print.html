@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>과목별 프린트</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f3f4f6;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+
+    .subject {
+      margin-bottom: 26px;
+    }
+
+    .subject h2 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .pdf {
+      display: block;
+      background: white;
+      padding: 14px;
+      margin: 8px 0;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #111;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .pdf:active {
+      transform: scale(0.97);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>📄 과목별 프린트</h1>
+
+    <div class="subject">
+      <h2>국어</h2>
+      <a class="pdf" href="pdf/korean-1.pdf" download>국어 프린트 1</a>
+      <a class="pdf" href="pdf/korean-2.pdf" download>국어 프린트 2</a>
+    </div>
+
+    <div class="subject">
+      <h2>수학</h2>
+      <a class="pdf" href="pdf/math-1.pdf" download>수학 프린트 1</a>
+      <a class="pdf" href="pdf/math-2.pdf" download>수학 프린트 2</a>
+    </div>
+
+    <div class="subject">
+      <h2>물리</h2>
+      <a class="pdf" href="pdf/physics-1.pdf" download>물리 프린트 1</a>
+    </div>
+
+    <div class="subject">
+      <h2>영어</h2>
+      <a class="pdf" href="pdf/english-1.pdf" download>영어 프린트 1</a>
+    </div>
+
+    <a class="pdf" href="index.html">⬅ 홈으로</a>
+  </div>
+</body>
+</html>
