@@ -3,35 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <title>이지아 수업 관리</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- iOS 웹앱 설정 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="수업관리">
+
+  <!-- (선택) 홈화면 아이콘 -->
+  <!-- 같은 폴더에 icon.png (180x180) 넣으면 활성화 -->
+  <!-- <link rel="apple-touch-icon" href="icon.png"> -->
 
   <style>
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       background: #f3f4f6;
+      -webkit-tap-highlight-color: transparent;
     }
 
     .container {
-      padding: 20px;
+      padding: 24px;
+      padding-top: env(safe-area-inset-top);
+      padding-bottom: env(safe-area-inset-bottom);
     }
 
     h1 {
       text-align: center;
       margin-bottom: 30px;
       font-size: 24px;
+      font-weight: 700;
     }
 
     .grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 16px;
+      gap: 18px;
     }
 
     .card {
       aspect-ratio: 1 / 1;
       background: white;
-      border-radius: 20px;
+      border-radius: 22px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -39,11 +52,12 @@
       font-weight: 600;
       text-decoration: none;
       color: #111;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+      transition: transform 0.15s ease;
     }
 
     .card:active {
-      transform: scale(0.97);
+      transform: scale(0.96);
     }
   </style>
 </head>
@@ -53,9 +67,7 @@
     <h1>📘 이지아 수업 관리</h1>
 
     <div class="grid">
-      <a class="card" href="https://forms.gle/La6VFV2PbazrKf9o8">📋 숙제 체크</a>
-      <a class="card" href="https://forms.gle/ra1oNxVpkMXkJZ9XA">❓ 질문하기</a>
-      <a class="card" href="homework.html">📚 과목별 숙제표</a>
+      <a class="card" href="homework.html">📚 과목별 숙제</a>
       <a class="card" href="print.html">📄 과목별 프린트</a>
     </div>
   </div>
